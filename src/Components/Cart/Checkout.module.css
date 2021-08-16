@@ -1,0 +1,100 @@
+.form {
+margin: 1rem 0 0;
+padding: 0 0.5rem;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.group-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    margin:0.4rem 0.5rem;
+}
+
+.form-control label {
+font-weight: bold;
+margin-bottom: 0.3rem;
+display: block;
+}
+
+.form-control input {
+font: inherit;
+padding: 0.3rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 17rem;
+max-width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.actions button {
+font: inherit;
+color: #5a1a01;
+cursor: pointer;
+background-color: transparent;
+border: none;
+border-radius: 25px;
+padding: 0.5rem 2rem;
+}
+
+.actions button:hover,
+.actions button:active {
+background-color: #ffe6dc;
+}
+
+.actions .submit {
+border: 1px solid #5a1a01;
+background-color: #5a1a01;
+color: white;
+}
+
+.actions .submit:hover,
+.actions .submit:active {
+background-color: #7a2706;
+}
+
+input.invalid[type="text"],
+input.invalid[type="number"] {
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+{
+    appearance:none;
+    margin:0;
+}
+
+@media (max-width: 768px)  {
+    .form {
+        max-height: 13rem;
+    }
+}
+
+@media (max-width: 325px)  {
+    .modal {
+        width: 17rem;
+        left: calc(50% - 9.5rem);
+    }
+
+    .form {
+      padding-left: 0;
+    }
+
+    .form-control input {
+        width: 15rem;
+    }
+}
+

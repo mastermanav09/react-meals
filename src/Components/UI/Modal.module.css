@@ -1,0 +1,61 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+
+.modal {
+  position: fixed;
+  left: calc(50% - 8.66rem);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 400ms ease-out forwards;
+}
+
+.nocheckout-modal{
+  top: 20vh;
+}
+
+.checkout-modal{
+  top: 8vh;
+}
+
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 21rem);
+  }
+}
+
+@media (max-width: 768px) and (min-width: 325px) {
+  .modal {
+    width: 20rem;
+    left: calc(50% - 11rem);
+  }
+}
+
+@media (max-width: 325px)  {
+  .modal {
+    width: 17rem;
+    left: calc(50% - 9.5rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

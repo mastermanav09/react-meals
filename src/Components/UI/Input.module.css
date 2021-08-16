@@ -1,0 +1,29 @@
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.input label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.input input {
+  width: 3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
+
+.input input:focus,
+.input input:active {
+  outline: 0;
+}
+
+.input input::-webkit-inner-spin-button,
+.input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
